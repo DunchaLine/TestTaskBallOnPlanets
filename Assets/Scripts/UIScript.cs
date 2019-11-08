@@ -23,7 +23,7 @@ public class UIScript : MonoBehaviour
     public void JupiterButton()
     {
         PlayerPrefs.DeleteAll();
-        _planetName = "Moon";
+        _planetName = "Jupiter";
         PlayerPrefs.SetString("Planet", _planetName);
         SceneManager.LoadScene("main");
     }
