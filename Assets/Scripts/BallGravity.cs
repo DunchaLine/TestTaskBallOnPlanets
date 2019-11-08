@@ -9,6 +9,7 @@ public class BallGravity : MonoBehaviour
     Vector2 _mousePos;
     Rigidbody2D rb;
     string _planetName;
+    int counter;
 
     void Start()
     {
@@ -61,5 +62,15 @@ public class BallGravity : MonoBehaviour
     void UI()
     {
         SceneManager.LoadScene("menu");
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "platform")
+        {
+            counter = PlayerPrefs.GetInt("counter");
+            counter++;
+            PlayerPrefs.SetInt("counter", counter);
+            Debug.Log(counter);
+        }
     }
 }
