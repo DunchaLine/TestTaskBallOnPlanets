@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BackgroundColor.cs" />
      <Compile Include="Assets\Scripts\BallGravity.cs" />
+     <Compile Include="Assets\Scripts\PlatformColor.cs" />
      <Compile Include="Assets\Scripts\UIScript.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/voskk/OneDrive/Документы/unity/TestTaskBallOnPlanets/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
